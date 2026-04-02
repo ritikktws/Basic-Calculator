@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-def add(a, b):
+def test_add(a, b):
     answer = a + b
     return f"{a} + {b} = {answer}"
 
@@ -31,7 +31,7 @@ def test_calculator():
         b = int(request.form["num2"])
 
         if operation == "add":
-            result = add(a, b)
+            result = test_add(a, b)
         elif operation == "sub":
             result = sub(a, b)
         elif operation == "mul":
