@@ -22,7 +22,7 @@ def div(a, b):
         return "Cannot divide by zero."
 
 @app.route("/", methods=["GET", "POST"])
-def calculator():
+def test_calculator():
     result = None
 
     if request.method == "POST":
